@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Моніторинг</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Дані з IoT Датчиків</h1>
+    
+    <div id="sensor-data"></div>
+
+    <h2>Додати новий запис</h2>
+    <form id="add-sensor-form">
+        <label>Sensor ID: <input type="number" id="sensor_id" required></label><br>
+        <label>Temperature: <input type="number" id="temperature" step="0.01" required></label><br>
+        <label>Humidity: <input type="number" id="humidity" step="0.01" required></label><br>
+        <button type="submit">Додати запис</button>
+    </form>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

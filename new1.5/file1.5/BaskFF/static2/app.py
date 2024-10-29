@@ -3,7 +3,15 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@localhost/iot_monitoring'
+
+# Параметри підключення до бази даних
+DB_USER = 'SergNik'
+DB_PASSWORD = 'Sergiy2024'
+DB_HOST = 'localhost'
+DB_PORT = '5432'
+DB_NAME = 'sample30'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -63,3 +71,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
