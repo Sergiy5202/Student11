@@ -2,9 +2,6 @@ from flask import Flask, jsonify, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-
-
-
 app = Flask(__name__)
 
 # Параметри підключення до бази даних
