@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Units><Unit><Name>Alpha</Name><Quantity>100</Quantity><Status>Active</Status></Unit><Unit><Name>Bravo</Name><Quantity>80</Quantity><Status>Inactive</Status></Unit><Unit><Name>Charlie</Name><Quantity>120</Quantity><Status>Active</Status></Unit></Units>

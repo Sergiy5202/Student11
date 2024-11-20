@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.3-alpha.1/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:q,mm:v}=window,j=new q.Toolbar;j.attach(v);const we=j.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((f,d,h,u)=>{const g=f();window.mm=g.Markmap.create("svg#mindmap",(d||g.deriveOptions)(u),h)})(()=>window.markmap,null,{"content":"Реляційні бази даних","children":[{"content":"Основні особливості","children":[{"content":"Таблична структура","children":[{"content":"Дані зберігаються в таблицях (реляціях)","children":[],"payload":{"lines":"4,5"}},{"content":"Кожна таблиця має стовпці (атрибути) і рядки (записи)","children":[],"payload":{"lines":"5,6"}}],"payload":{"lines":"3,6"}},{"content":"Ключі та зв'язки","children":[{"content":"Первинний ключ (Primary Key)","children":[],"payload":{"lines":"7,8"}},{"content":"Зовнішній ключ (Foreign Key)","children":[],"payload":{"lines":"8,9"}},{"content":"Забезпечують зв'язок між таблицями","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"6,10"}},{"content":"Нормалізація даних","children":[{"content":"1NF: Атомарність","children":[],"payload":{"lines":"11,12"}},{"content":"2NF: Уникнення часткових залежностей","children":[],"payload":{"lines":"12,13"}},{"content":"3NF: Усунення транзитивних залежностей","children":[],"payload":{"lines":"13,14"}}],"payload":{"lines":"10,14"}},{"content":"Цілісність даних","children":[{"content":"Обмеження (constraints)","children":[{"content":"NOT NULL","children":[],"payload":{"lines":"16,17"}},{"content":"UNIQUE","children":[],"payload":{"lines":"17,18"}},{"content":"FOREIGN KEY","children":[],"payload":{"lines":"18,19"}}],"payload":{"lines":"15,19"}},{"content":"Підтримка цілісності між даними різних таблиць","children":[],"payload":{"lines":"19,21"}}],"payload":{"lines":"14,21"}}],"payload":{"lines":"2,3"}},{"content":"SQL","children":[{"content":"Мова для роботи з базами даних","children":[{"content":"Створення таблиць","children":[],"payload":{"lines":"23,24"}},{"content":"Вставка даних","children":[],"payload":{"lines":"24,25"}},{"content":"Оновлення даних","children":[],"payload":{"lines":"25,26"}},{"content":"Видалення даних","children":[],"payload":{"lines":"26,27"}}],"payload":{"lines":"22,27"}},{"content":"Приклад запиту<pre><code class=\"language-sql\"><span class=\"hljs-keyword\">SELECT</span> Name, Rank <span class=\"hljs-keyword\">FROM</span> Personnel <span class=\"hljs-keyword\">WHERE</span> Unit <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">'Engineering'</span>;\n</code></pre>","children":[],"payload":{"lines":"27,30"}}],"payload":{"lines":"21,22"}}],"payload":{"lines":"0,1"}},null)</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.3-alpha.1/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:q,mm:v}=window,j=new q.Toolbar;j.attach(v);const we=j.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((f,d,h,u)=>{const g=f();window.mm=g.Markmap.create("svg#mindmap",(d||g.deriveOptions)(u),h)})(()=>window.markmap,null,{"content":"Нереляційні бази даних (NoSQL)","children":[{"content":"Основні типи","children":[{"content":"Документно-орієнтовані","children":[{"content":"Дані зберігаються у вигляді документів (JSON, BSON)","children":[],"payload":{"lines":"5,6"}},{"content":"Приклад: MongoDB","children":[],"payload":{"lines":"6,7"}}],"payload":{"lines":"4,7"}},{"content":"Ключ-значення","children":[{"content":"Дані зберігаються у вигляді пар \"ключ-значення\"","children":[],"payload":{"lines":"8,9"}},{"content":"Приклад: Redis, Amazon DynamoDB","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"7,10"}},{"content":"Графові бази даних","children":[{"content":"Дані представлені у вигляді вузлів та зв'язків","children":[],"payload":{"lines":"11,12"}},{"content":"Приклад: Neo4j, Amazon Neptune","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"10,13"}},{"content":"Стовпцеві бази даних","children":[{"content":"Дані зберігаються по стовпцях, а не по рядках","children":[],"payload":{"lines":"14,15"}},{"content":"Приклад: Apache Cassandra, HBase","children":[],"payload":{"lines":"15,17"}}],"payload":{"lines":"13,17"}}],"payload":{"lines":"3,4"}},{"content":"Особливості","children":[{"content":"Гнучка структура даних","children":[{"content":"Немає необхідності у фіксованій схемі","children":[],"payload":{"lines":"19,20"}},{"content":"Легко змінювати структуру документів","children":[],"payload":{"lines":"20,21"}}],"payload":{"lines":"18,21"}},{"content":"Масштабованість","children":[{"content":"Легко масштабується горизонтально (розподілені системи)","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"21,23"}},{"content":"Висока продуктивність","children":[{"content":"Оптимізовано для швидкого читання та запису","children":[],"payload":{"lines":"24,25"}}],"payload":{"lines":"23,25"}},{"content":"Розподілені системи","children":[{"content":"Підтримка даних у різних локаціях","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"25,28"}}],"payload":{"lines":"17,18"}},{"content":"Використання","children":[{"content":"Великі обсяги неструктурованих даних","children":[{"content":"Соціальні мережі","children":[],"payload":{"lines":"30,31"}},{"content":"Логістика","children":[],"payload":{"lines":"31,32"}},{"content":"Інтернет речей (IoT)","children":[],"payload":{"lines":"32,33"}}],"payload":{"lines":"29,33"}},{"content":"Обробка в реальному часі","children":[{"content":"Онлайн-ігри","children":[],"payload":{"lines":"34,35"}},{"content":"Торгові платформи","children":[],"payload":{"lines":"35,37"}}],"payload":{"lines":"33,37"}}],"payload":{"lines":"28,29"}},{"content":"Переваги","children":[{"content":"Відсутність жорсткої схеми","children":[],"payload":{"lines":"38,39"}},{"content":"Простота масштабування","children":[],"payload":{"lines":"39,40"}},{"content":"Висока швидкість роботи з великими обсягами даних","children":[],"payload":{"lines":"40,42"}}],"payload":{"lines":"37,38"}},{"content":"Недоліки","children":[{"content":"Відсутність стандартизованого SQL","children":[],"payload":{"lines":"43,44"}},{"content":"Складність управління зв'язками між даними","children":[],"payload":{"lines":"44,45"}},{"content":"Потенційні проблеми з цілісністю даних","children":[],"payload":{"lines":"45,47"}}],"payload":{"lines":"42,43"}},{"content":"Приклади баз даних NoSQL","children":[{"content":"MongoDB","children":[],"payload":{"lines":"48,49"}},{"content":"Redis","children":[],"payload":{"lines":"49,50"}},{"content":"Neo4j","children":[],"payload":{"lines":"50,51"}},{"content":"Apache Cassandra","children":[],"payload":{"lines":"51,52"}}],"payload":{"lines":"47,48"}}],"payload":{"lines":"1,2"}},{"initialExpandLevel":2})</script>
+</body>
+</html>

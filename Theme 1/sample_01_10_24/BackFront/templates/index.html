@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Sensors Management</title>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h1>IoT Sensors Management</h1>
+    <form id="addSensorForm">
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+        <label for="type">Type:</label>
+        <input type="text" id="type" required>
+        <label for="status">Active:</label>
+        <input type="checkbox" id="status" checked>
+        <button type="submit">Add Sensor</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="sensorsTableBody">
+            <!-- Sensors data will be inserted here -->
+        </tbody>
+    </table>
+</body>
+</html>

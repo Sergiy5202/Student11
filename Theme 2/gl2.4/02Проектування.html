@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.3-alpha.1/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.3-alpha.1/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:q,mm:v}=window,j=new q.Toolbar;j.attach(v);const we=j.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((f,d,h,u)=>{const g=f();window.mm=g.Markmap.create("svg#mindmap",(d||g.deriveOptions)(u),h)})(()=>window.markmap,null,{"content":"Проектування баз даних","children":[{"content":"Етапи проектування","children":[{"content":"Збір вимог","children":[{"content":"Аналіз потреб користувачів","children":[],"payload":{"lines":"5,6"}},{"content":"Визначення даних, які потрібно зберігати","children":[],"payload":{"lines":"6,7"}}],"payload":{"lines":"4,7"}},{"content":"Логічне проектування","children":[{"content":"Визначення таблиць","children":[],"payload":{"lines":"8,9"}},{"content":"Визначення атрибутів (стовпців)","children":[],"payload":{"lines":"9,10"}},{"content":"Моделювання зв'язків між таблицями","children":[],"payload":{"lines":"10,11"}}],"payload":{"lines":"7,11"}},{"content":"Фізичне проектування","children":[{"content":"Вибір СУБД","children":[],"payload":{"lines":"12,13"}},{"content":"Створення схеми бази даних","children":[],"payload":{"lines":"13,14"}},{"content":"Оптимізація зберігання даних","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"11,16"}}],"payload":{"lines":"3,4"}},{"content":"Нормалізація","children":[{"content":"1NF: Таблиця з атомарними полями","children":[],"payload":{"lines":"17,18"}},{"content":"2NF: Уникнення часткових залежностей","children":[],"payload":{"lines":"18,19"}},{"content":"3NF: Усунення транзитивних залежностей","children":[],"payload":{"lines":"19,20"}},{"content":"Денормалізація (за потреби)","children":[{"content":"Зниження нормалізації для підвищення продуктивності","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"20,23"}}],"payload":{"lines":"16,17"}},{"content":"Ключі","children":[{"content":"Первинний ключ (Primary Key)","children":[{"content":"Унікальний ідентифікатор запису","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"24,26"}},{"content":"Зовнішній ключ (Foreign Key)","children":[{"content":"Посилання на первинний ключ іншої таблиці","children":[],"payload":{"lines":"27,28"}}],"payload":{"lines":"26,28"}},{"content":"Унікальні ключі (Unique Keys)","children":[{"content":"Забезпечують унікальність полів","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"28,31"}}],"payload":{"lines":"23,24"}},{"content":"ER-діаграма","children":[{"content":"Сутності (Entities)","children":[{"content":"Таблиці","children":[],"payload":{"lines":"33,34"}}],"payload":{"lines":"32,34"}},{"content":"Атрибути (Attributes)","children":[{"content":"Стовпці","children":[],"payload":{"lines":"35,36"}}],"payload":{"lines":"34,36"}},{"content":"Зв'язки (Relationships)","children":[{"content":"Один до одного (1:1)","children":[],"payload":{"lines":"37,38"}},{"content":"Один до багатьох (1:M)","children":[],"payload":{"lines":"38,39"}},{"content":"Багато до багатьох (M:N)","children":[],"payload":{"lines":"39,41"}}],"payload":{"lines":"36,41"}}],"payload":{"lines":"31,32"}},{"content":"Оптимізація бази даних","children":[{"content":"Індекси","children":[{"content":"Прискорюють пошук даних","children":[],"payload":{"lines":"43,44"}}],"payload":{"lines":"42,44"}},{"content":"Кешування","children":[{"content":"Зберігання часто використовуваних даних","children":[],"payload":{"lines":"45,46"}}],"payload":{"lines":"44,46"}},{"content":"Резервне копіювання","children":[{"content":"Захист даних від втрат","children":[],"payload":{"lines":"47,49"}}],"payload":{"lines":"46,49"}}],"payload":{"lines":"41,42"}},{"content":"Моделі баз даних","children":[{"content":"Реляційна модель","children":[{"content":"Таблична структура","children":[],"payload":{"lines":"51,52"}}],"payload":{"lines":"50,52"}},{"content":"Нереляційні моделі (NoSQL)","children":[{"content":"Документно-орієнтовані","children":[],"payload":{"lines":"53,54"}},{"content":"Ключ-значення","children":[],"payload":{"lines":"54,55"}},{"content":"Графові бази даних","children":[],"payload":{"lines":"55,56"}}],"payload":{"lines":"52,56"}}],"payload":{"lines":"49,50"}}],"payload":{"lines":"1,2"}},{"initialExpandLevel":2})</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік документів</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Таблиця документів</h1>
+        <table id="documents-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Номер</th>
+                    <th>Тип</th>
+                    <th>Зміст</th>
+                    <th>Дата</th>
+                    <th>Статус виконання</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Дані документів будуть додані сюди через JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch('/api/documents')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('documents-table').getElementsByTagName('tbody')[0];
+                data.forEach(document => {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).innerText = document.document_id;
+                    row.insertCell(1).innerText = document.number;
+                    row.insertCell(2).innerText = document.type_name;
+                    row.insertCell(3).innerText = document.content;
+                    row.insertCell(4).innerText = document.date;
+                    row.insertCell(5).innerText = document.completion_status;
+                });
+            })
+            .catch(error => console.error('Error fetching documents:', error));
+    </script>
+</body>
+</html>
